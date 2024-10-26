@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
-import Header from "./components/custom/Header";
+import Trip from "./trip";
 import NotFound from "./NotFound";
 import Layout from "./components/layout/Layout";
 
@@ -13,6 +13,15 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <App />
+      </Layout>
+    ),
+    errorElement: <NotFound />,
+  },
+  {
+    path: "/trip",
+    element: (
+      <Layout>
+        <Trip />
       </Layout>
     ),
     errorElement: <NotFound />,

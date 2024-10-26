@@ -1,10 +1,10 @@
-import { Button } from "@/components/ui/button";
+import Hero from "./components/custom/Hero";
 import "./App.css";
 
 function App() {
   return (
     <div>
-      <Button>Click me</Button>
+      <Hero />
     </div>
   );
 }
